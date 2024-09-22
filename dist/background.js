@@ -1,0 +1,1 @@
+"use strict";(()=>{var e="activeState";var n=!1;async function c(){let s=async()=>{n=(await chrome.storage.sync.get([e]))[e]!=="off"},t=async()=>{await s(),n?await chrome.action.setBadgeText({text:"L"}):await chrome.action.setBadgeText({text:""})},r=(a,g)=>{let o=!1;g==="sync"&&a?.[e]?.newValue&&(o=!0),o&&t()};chrome.storage.onChanged.addListener(r),t()}c();})();

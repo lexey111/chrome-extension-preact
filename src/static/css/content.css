@@ -1,0 +1,17 @@
+#__preact_template_inserted {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 2px solid #ffffffe0;
+    box-shadow: 0 2px 8px #00000050;
+    background: #198ad1;
+    z-index: 1000;
+    display: flex;
+    font-size: 18px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}

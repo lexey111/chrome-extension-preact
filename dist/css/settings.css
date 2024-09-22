@@ -1,0 +1,61 @@
+@import "reset.css";
+@import "fonts.css";
+@import "typography.css";
+@import "language-component.css";
+@import "onoff.css";
+@import "alerts.css";
+
+#root {
+    max-width: 960px;
+    margin: 0 auto;
+    width: clamp(300px, 90vw, 960px);
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 200;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin: 1.5rem 0 2rem 0;
+}
+
+h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 200;
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    margin: 2rem 0 2rem 0;
+
+    .language-selector {
+        margin-left: auto;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 1rem;
+    list-style-position: inside;
+    li::marker {
+        color: var(--border-color);
+    }
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer {
+    margin-top: auto;
+    height: 64px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}

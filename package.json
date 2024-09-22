@@ -1,0 +1,38 @@
+{
+  "name": "preact-chrome-extension",
+  "version": "1.0.0",
+  "description": "Template for Chrome extension Manifest v.3 with Preact and Typescript",
+  "main": "src/settings/settings.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build/esbuild.js",
+    "start": "bun build/esbuild-serve.js",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix"
+  },
+  "keywords": [
+    "frontend",
+    "preact",
+    "chrome",
+    "extension",
+    "boilerplate",
+    "typescript"
+  ],
+  "author": "lexey111",
+  "license": "ISC",
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.8.0",
+    "@stylistic/eslint-plugin-ts": "^2.8.0",
+    "@types/bun": "latest",
+    "@types/chrome": "^0.0.271",
+    "@typescript-eslint/parser": "^8.6.0",
+    "chokidar": "^4.0.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.11.0",
+    "globals": "^15.9.0",
+    "preact": "^10.24.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {}
+}

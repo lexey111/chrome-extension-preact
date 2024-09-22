@@ -1,0 +1,45 @@
+.app-header h1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    .language-selector {
+        margin-left: auto;
+    }
+}
+
+.language-selector {
+    font-size: .7rem;
+
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: 6px;
+
+        li {
+            display: flex;
+            flex-flow: row nowrap;
+
+            a {
+                border-radius: 4px;
+                padding: .3rem .5rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                user-select: none;
+                transition: all .2s ease-in-out;
+
+                &.active {
+                    background-color: var(--accent-color);
+                    color: white;
+                    pointer-events: none;
+                }
+
+                &:hover, &:focus {
+                    box-shadow: 0 0 0 2px rgba(0, 114, 255, 0.35);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

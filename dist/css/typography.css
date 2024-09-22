@@ -1,0 +1,87 @@
+:root {
+    --page-color: #f2f9fa;
+    --text-color: #2c363c;
+
+    --accent-color: #009dff;
+
+    --focus-color: #00a6ff;
+    --focus-border-color: #004c6a;
+
+    --input-highlight-color: #d2d8d8;
+
+    --border-color: #3693ff;
+
+    --info-color: #b9e3fd;
+    --info-accent-color: #198ad1;
+    --info-text-color: #425875;
+
+    --warning-color: #fde0b9;
+    --warning-accent-color: #ffa600;
+    --warning-text-color: #4e3e2a;
+
+    --on-bg: #199fdc;
+}
+
+
+body {
+    font-family: system-ui;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--page-color);
+    transition: all .2s ease-in-out;
+
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 3px;
+}
+
+body.disabled {
+    filter: grayscale(1);
+    background-color: #eee;
+}
+
+body.no-transition {
+    * {
+        transition: none !important;
+    }
+
+    .slider {
+        opacity: 0.5;
+        transition: none !important;
+    }
+
+    .slider:before {
+        transition: none !important;
+        opacity: 0.2;
+    }
+}
+
+a,
+a:visited {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: all 0.1s linear;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+        color: var(--accent-color);
+    }
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin: .5rem 0;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin: .5rem 0;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: var(--accent-color);
+}

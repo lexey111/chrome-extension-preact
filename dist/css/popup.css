@@ -1,0 +1,26 @@
+@import "reset.css";
+@import "fonts.css";
+@import "typography.css";
+@import "language-component.css";
+@import "onoff.css";
+@import "alerts.css";
+
+body {
+    margin: 0;
+    width: 400px;
+    min-height: 200px;
+    padding: 16px 32px;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+
+    .language-selector {
+        margin-left: auto;
+    }
+}
