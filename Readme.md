@@ -30,3 +30,9 @@ Build:
 ### Usage
 
 Install into Chrome:
+
+1. Build with `bun run build` 
+2. `Window → Extensions → Load unpacked`
+3. Select `dist` folder
+
+![install](install.png)
