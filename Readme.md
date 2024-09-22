@@ -1,38 +1,40 @@
 # Preact Chrome extension
 
-This project uses [Preact](https://preactjs.com/) and Typescript. 
+This project uses [Preact](https://preactjs.com/) and Typescript.
 
 ## Installation
 
-### Prerequisites: [Bun](https://bun.sh/docs/installation)
+### 1. Prerequisites
 
-Install Bun (can be NPM with a minor changes):
+Install [Bun](https://bun.sh/docs/installation) (can be NPM with a minor changes):
 
 `curl -fsSL https://bun.sh/install | bash`
 
-### Dependencies
+### 2. Dependencies
 
 Install dependencies:
 
 `bun i`
 
-### Build
+### 3. Build
 
 Build:
 
 `bun run build`
 
-### Dev server
+#### Dev server
 
-1. `bun start`
-2. open 'http://localhost:3000/'
+`bun start`
+(will update `popup` and `settings` pages, for content script you need to reload extension)
 
-### Usage
+### 4. Usage
 
-Install into Chrome:
+Add to Chrome:
 
-1. Build with `bun run build` 
+1. Build with `bun run build`
 2. `Window → Extensions → Load unpacked`
 3. Select `dist` folder
 
 ![install](install.png)
+
+Then you can pack it and publish. Enjoy!
