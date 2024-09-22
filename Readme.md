@@ -2,6 +2,10 @@
 
 This project uses [Preact](https://preactjs.com/) and Typescript.
 
+Here is [Medium Article](https://lexeykoshkin.medium.com/chrome-extension-with-preact-and-ts-850e40bf016c) with more details.
+
+![example](example.png)
+
 ## Installation
 
 ### 1. Prerequisites
